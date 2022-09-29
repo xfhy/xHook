@@ -25,8 +25,14 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    //-----引入了 xhook 和 biz
+    //todo xfhy xhook是干啥的
+    //todo xfhy biz是干啥的
     implementation project(':xhook')
     implementation project(':biz')
+
+
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
 }
