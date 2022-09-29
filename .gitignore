@@ -1,11 +1,11 @@
 .DS_Store
 
-libxhook/libs/
-libxhook/obj/
-libbiz/libs/
-libbiz/obj/
-libtest/libs/
-libtest/obj/
+#libxhook/libs/
+##libxhook/obj/
+#libbiz/libs/
+##libbiz/obj/
+#libtest/libs/
+#libtest/obj/
 
 #for xhookwrapper
 build/
@@ -14,5 +14,5 @@ build/
 local.properties
 *.iml
 *.log
-*.so
-xhookwrapper/xhook/libs/
+#*.so
+#xhookwrapper/xhook/libs/
