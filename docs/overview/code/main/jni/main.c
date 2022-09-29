@@ -47,7 +47,7 @@ void hook()
 
 int main()
 {
-    hook();
+    //hook();
     
     say_hello();
     return 0;
