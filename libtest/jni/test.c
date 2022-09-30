@@ -26,6 +26,8 @@ static void *new_thread_func(void *arg)
     return NULL;
 }
 
+
+//开了个线程,然后不断地执行
 void Java_com_qiyi_test_NativeHandler_start(JNIEnv* env, jobject obj)
 {
     (void)env;
