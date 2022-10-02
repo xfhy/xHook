@@ -47,10 +47,10 @@ void Java_com_qiyi_biz_NativeHandler_start(JNIEnv* env, jobject obj)
     (void)obj;
 
     //注册hook信息
-    //系统的log输出hook成自己的my_system_log_print
+    //系统的log输出hook成自己的my_system_log_print,my_system_log_print其实也没干啥,就是将tag改成了xhook_system
     xhook_register("^/system/.*\\.so$",  "__android_log_print", my_system_log_print,  NULL);
     xhook_register("^/vendor/.*\\.so$",  "__android_log_print", my_system_log_print,  NULL);
-    //libtest.so的log输出hook成自己的my_libtest_log_print
+    //libtest.so的log输出hook成自己的my_libtest_log_print,my_libtest_log_print只是将tag改成了xhook_libtest_hook
     xhook_register(".*/libtest\\.so$", "__android_log_print", my_libtest_log_print, NULL);
 
     //just for testing

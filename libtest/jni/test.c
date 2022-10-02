@@ -27,7 +27,7 @@ static void *new_thread_func(void *arg)
 }
 
 
-//开了个线程,然后不断地执行
+//开了个线程,然后不断地执行: log输出,tag为mytest,libbiz那边会hook,然后这个tag会hook成xhook_libtest_hook
 void Java_com_qiyi_test_NativeHandler_start(JNIEnv* env, jobject obj)
 {
     (void)env;
