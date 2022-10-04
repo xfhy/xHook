@@ -6,3 +6,9 @@
   1. 首先是进行了xhook的初始化
   2. 初始化biz,然后start,然后refresh
   3. 初始化test,然后start,然后refresh
+
+```
+cd ./xhookwrapper/
+./gradlew assembleDebug
+adb install ./app/build/outputs/apk/debug/app-debug.apk
+```

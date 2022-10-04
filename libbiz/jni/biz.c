@@ -48,6 +48,18 @@ void Java_com_qiyi_biz_NativeHandler_start(JNIEnv* env, jobject obj)
 
     //注册hook信息
     //系统的log输出hook成自己的my_system_log_print,my_system_log_print其实也没干啥,就是将tag改成了xhook_system
+    /**
+    int xhook_register(const char  *pathname_regex_str,
+                       const char  *symbol,
+                       void        *new_func,
+                       void       **old_func);
+    在当前进程的内存空间中，在每一个符合正则表达式 pathname_regex_str 的已加载ELF中，每一个调用 symbol 的 PLT 入口点的地址值都将给替换成 new_func。之前的 PLT 入口点的地址值将被保存在 old_func 中。
+
+    new_func 必须具有和原函数同样的函数声明。
+
+    成功返回 0，失败返回 非0。
+    */
+
     xhook_register("^/system/.*\\.so$",  "__android_log_print", my_system_log_print,  NULL);
     xhook_register("^/vendor/.*\\.so$",  "__android_log_print", my_system_log_print,  NULL);
     //libtest.so的log输出hook成自己的my_libtest_log_print,my_libtest_log_print只是将tag改成了xhook_libtest_hook

@@ -20,6 +20,13 @@ public class MainActivity extends AppCompatActivity {
         //com.qiyi.xhook.XHook.getInstance().enableSigSegvProtection(false); //default is true
 
         //load and run your biz lib (for register hook points)
+        com.xfhy.touch.TouchTest.getInstance().init();
+        com.xfhy.touch.TouchTest.getInstance().start();
+
+        //xhook do refresh
+        com.qiyi.xhook.XHook.getInstance().refresh(false);
+
+        //load and run your biz lib (for register hook points)
         com.qiyi.biz.Biz.getInstance().init();
         com.qiyi.biz.Biz.getInstance().start();
 

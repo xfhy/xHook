@@ -35,3 +35,9 @@ cp -f ./libtest/libs/armeabi-v7a/libtest.so   ./xhookwrapper/app/libs/armeabi-v7
 cp -f ./libtest/libs/arm64-v8a/libtest.so     ./xhookwrapper/app/libs/arm64-v8a/
 cp -f ./libtest/libs/x86/libtest.so           ./xhookwrapper/app/libs/x86/
 cp -f ./libtest/libs/x86_64/libtest.so        ./xhookwrapper/app/libs/x86_64/
+
+cp -f ./libtouch/libs/armeabi/libtouch.so       ./xhookwrapper/app/libs/armeabi/
+cp -f ./libtouch/libs/armeabi-v7a/libtouch.so   ./xhookwrapper/app/libs/armeabi-v7a/
+cp -f ./libtouch/libs/arm64-v8a/libtouch.so     ./xhookwrapper/app/libs/arm64-v8a/
+cp -f ./libtouch/libs/x86/libtouch.so           ./xhookwrapper/app/libs/x86/
+cp -f ./libtouch/libs/x86_64/libtouch.so        ./xhookwrapper/app/libs/x86_64/
