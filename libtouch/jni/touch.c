@@ -13,15 +13,15 @@
 #include <sys/prctl.h>
 #include <sys/resource.h>
 
-#include <cstdio>
-#include <ctime>
-#include <csignal>
-#include <thread>
-#include <memory>
-#include <string>
-#include <optional>
-#include <sstream>
-#include <fstream>
+//#include <cstdio>
+//#include <ctime>
+//#include <csignal>
+//#include <thread>
+//#include <memory>
+//#include <string>
+//#include <optional>
+//#include <sstream>
+//#include <fstream>
 
 #include "xhook.h"
 
@@ -50,7 +50,7 @@ ssize_t my_recvfrom(int sockfd, void *buf, size_t len, int flags,
     return ret;
 }
 
-JNIEXPORT void JNICALL Java_com_xfhy_touch_TouchTest_start(JNIEnv *env, jclass clazz)
+void Java_com_xfhy_touch_TouchTest_start(JNIEnv *env, jclass clazz)
 {
 
     xhook_register(".*libinput\\.so$", "__sendto_chk",(void *) my_sendto, (void **) (&original_sendto));

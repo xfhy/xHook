@@ -12,7 +12,7 @@ include $(CLEAR_VARS)
 #生成的模块名称
 LOCAL_MODULE            := touch
 #需要编译的文件
-LOCAL_SRC_FILES         := touch.cc
+LOCAL_SRC_FILES         := touch.c
 #会生成依赖关系，当库不存在时会去编译这个库。
 LOCAL_SHARED_LIBRARIES  := xhook
 #编译器的警告设置参数  -Wall       给出“几乎”所有的编译器警告

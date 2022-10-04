@@ -27,20 +27,20 @@ public class MainActivity extends AppCompatActivity {
         com.qiyi.xhook.XHook.getInstance().refresh(false);
 
         //load and run your biz lib (for register hook points)
-        com.qiyi.biz.Biz.getInstance().init();
-        com.qiyi.biz.Biz.getInstance().start();
+        //com.qiyi.biz.Biz.getInstance().init();
+        ///com.qiyi.biz.Biz.getInstance().start();
 
         //xhook do refresh
-        com.qiyi.xhook.XHook.getInstance().refresh(false);
+        //com.qiyi.xhook.XHook.getInstance().refresh(false);
 
         //load and run the target lib
-        com.qiyi.test.Test.getInstance().init();
-        com.qiyi.test.Test.getInstance().start();
-        try {
-            Thread.sleep(200);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        //com.qiyi.test.Test.getInstance().init();
+        //com.qiyi.test.Test.getInstance().start();
+//        try {
+//            Thread.sleep(200);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
 
         //xhook do refresh again
         com.qiyi.xhook.XHook.getInstance().refresh(false);
